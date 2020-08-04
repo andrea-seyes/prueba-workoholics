@@ -1,13 +1,70 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Heebo', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.h6, h6{
+  margin: 0px;
+}
+
+a{
+  color: #333333;
+  text-decoration: none;
+}
+
+.active .login{
+  color: 5596df;
+}
+
+.f{
+  font-weight: 200;
+}
+
+.menu{
+  background-color: #333333f6;
+  z-index: 20;
+  height: 20rem;
+}
+
+.navbar-nav{
+  width: 100vw;
+  position: fixed;
+  z-index: 50;
+  background-color: rgba(51, 51, 51, .97);
+  left: 0;
+  top: 72px;
+  height: calc(100vh - 72px);
+  justify-content: space-between;
+}
+
+#menu{
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 5rem;
+  align-self: center;
+}
+
+.desktop-footer{
+  bottom: 0;
+}
+
+@media (max-width: 575px) { 
+.border-xs{
+  border-bottom: 0.2px solid #3333332a;
+  padding: 0rem;
+}
+
+.p-xs{
+  font-size: 14px;
+}
+}
+
+@media (min-width: 992px) {
+  .border-lg{
+    border: .2px solid #3333332a;
+    border-radius: .3rem;
+    padding: 2rem 3rem;
+  }
 }
